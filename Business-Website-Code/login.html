@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> Login and Registration Form Design </title>
+<link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+<div class="login-page">
+<div class="form">
+    <form class="register-form">
+	<input type="text" placeholder="user name" />
+	<input type="text" placeholder="password" />
+	<input type="text" placeholder="email id" />
+	<button>CREATE</button>
+	<p class="message">Already registered? <a href ="#">Login</a></p>
+	<br><button><a href="index.html">HOME</a></button>
+	</form>
+	
+	
+	<form class="login-form">
+	<input type="text" placeholder="user name" />
+	<input type="password" placeholder="password" />
+    <button>LOGIN</button>
+	<p class="message">Don't have an account? <a href="#">Register Here.</a></p>
+	<br><button><a href="index.html">HOME</a></button>
+	</form>
+    </div>
+    </div>
+     
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+	<script>
+	$('.message a').click(function(){
+	$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
+	</script>
+	
+	
+
+</body>	
+</html>
